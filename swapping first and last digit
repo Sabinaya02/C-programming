@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d",&a);
+    int last=a%10;
+    int first=0;
+    while(a>0){
+        first=a;
+        a/=10;
+        first=first^last;
+        last=first^last;
+        first=first^last;
+        printf("%d %d",first,last);
+    }
+    return 0;
+}
