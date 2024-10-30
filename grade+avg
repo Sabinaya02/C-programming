@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+   int tam,eng,mat,sci,social,avg,total;
+   printf("enter the marks");
+   scanf("%d%d%d%d%d",&tam,&eng,&mat,&sci,&social);
+   total=tam+eng+mat+sci+social;
+   avg=total/5;
+   if(avg>=90){
+       printf("grade:A");
+   }
+   else if(avg>=80){
+       printf("grade:B");
+   }
+   else if(avg>=70){
+       printf("grade:C");
+   }
+   else if(avg>=60){
+       printf("grade:D");
+   }
+   else if(avg>=50){
+       printf("grade:E");
+   }
+   else{
+       printf("fail");
+   }
+   return 0;
+   
+}
