@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d", &a);
+    int c = 0;
+    while (a > 0) {
+        a = a / 2;
+        c++;
+    }
+    printf("%d", c); // (c - 1)
+}
