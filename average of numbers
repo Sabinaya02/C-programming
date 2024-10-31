@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int a=5,b,sum=0;
+for(int i=1;i<=5;i++){
+scanf("%d",&b);
+sum+=b;
+}
+int avg=sum/a;
+printf("%d",avg);
+return 0;
+]
