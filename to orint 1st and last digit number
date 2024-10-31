@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+int last=a%10;
+int x=a;
+int c=0;
+while(a>0){
+a/=10;
+c++;
+}
+int p=pow(10,c-1);
+int first=x/p;
+printf("%d",first+last);
+}
+
+//without using predefined function
+#include<stdio.h>
+int main(){
+int a,b;
+scanf("%d%d",&a,&b);
+int c=a;
+for(int i=1;i<b;i++){
+a=a*c;
+{
+printf("%d",&a);
+}
+
+//without using any power function
+#include<stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+int last=a%10;
+int first=0;
+while(a>0){
+first==a;
+a/=10;
+}
+printf("%d",first+last);
+}
