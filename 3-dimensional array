@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d %d ",&a,&b);
+    int arr[a][b][b];
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+             for(int k=0;k<b;k++){
+            scanf("%d",&arr[i][j][k]);
+             }
+        }
+    }
+    int x,y,z;
+    printf("welcome to MEC_ELITE cinemas!!\n");
+    printf("Enter the screen no:\n");
+    scanf("%d",&x);
+    printf("Enter the row no:\n");
+    scanf("%d",&y);
+    printf("Enter the seat no:\n");
+    scanf("%d",&z);
+    printf("The Fair is:%d",arr[x-1][y-1][z-1]);
+}
+     
