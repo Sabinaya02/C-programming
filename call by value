@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+int add(int,int);
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int c=add(a,b);
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int z=add(x,y);
+    printf("%d %d",c,z);
+}
+int add(int m,int n){
+    int sum=m+n;
+    return sum;
+}
